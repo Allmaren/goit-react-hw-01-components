@@ -9,7 +9,7 @@
   border-radius: 8px;
 
   margin-bottom: 10px;
-  background-color: rgb(211, 207, 207);
+  background-color: rgb(255, 225, 225);
 }
 
 .status {
@@ -28,8 +28,6 @@
   background-color: green;
 }
 
-.avatar {
-}
 .name {
   text-shadow: #000;
 

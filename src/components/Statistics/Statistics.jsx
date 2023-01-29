@@ -4,12 +4,16 @@ import { getRandomHexColor } from './Random_Color';
 
 export const Statistics = ({ title, stats }) => {
   const titleElement = title && <h2 className={styles.title}>Upload stats</h2>;
-  const alertStyles = {
-    backgroundColor: getRandomHexColor(),
-    color: getRandomHexColor(),
-  };
+
   const elements = stats.map(stat => (
-    <li key={stat.id} className={styles.item} style={alertStyles}>
+    <li
+      key={stat.id}
+      className={styles.item}
+      style={{
+        backgroundColor: getRandomHexColor(),
+        color: getRandomHexColor(),
+      }}
+    >
       <span className={styles.label}>{stat.label}</span>
       <span className={styles.percentage}>{stat.percentage}</span>
     </li>

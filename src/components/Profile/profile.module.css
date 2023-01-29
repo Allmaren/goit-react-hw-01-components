@@ -5,7 +5,7 @@
   --red-warning: #b4f4d2;
 }
 
-.profile {
+/* .profile {
   text-align: center;
 
   width: 300px;
@@ -20,7 +20,7 @@
   background: var(--accent-white);
 
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .description {
   padding: 10px;
