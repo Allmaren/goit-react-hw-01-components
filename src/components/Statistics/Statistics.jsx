@@ -2,6 +2,7 @@ import styles from './statistics.module.css';
 import PropTypes from 'prop-types';
 import { List } from './Statistics.style';
 import { getRandomHexColor } from './Random_Color';
+import styled from 'styled-components';
 
 export const Statistics = ({ title, stats }) => {
   const titleElement = title && <h2 className={styles.title}>Upload stats</h2>;
