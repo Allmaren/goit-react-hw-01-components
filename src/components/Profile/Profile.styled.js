@@ -20,3 +20,47 @@ export const Item = styled.div`
 
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 `;
+
+export const Description = styled.div`
+  padding: 10px;
+  background: ${getRandomHexColor()};
+  border-radius: 8px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+`;
+
+export const Avatar = styled.img`
+  width: 100px;
+  height: 100px;
+`;
+
+export const Name = styled.p`
+  font-size: 35px;
+  color: #0c0c0c;
+`;
+
+export const TagLocal = styled.p`
+  font-size: 25px;
+  color: #0c0c0c;
+`;
+
+export const Stats = styled.ul`
+  font-size: larger;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+  border-radius: 8px;
+  background: ${getRandomHexColor()};
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+`;
+
+export const StateList = styled.li`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
+
+export const Span = styled.span`
+  color: #122ee5;
+`;

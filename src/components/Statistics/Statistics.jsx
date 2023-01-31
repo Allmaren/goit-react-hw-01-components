@@ -3,31 +3,32 @@ import PropTypes from 'prop-types';
 import { getRandomHexColor } from './Random_Color';
 
 export const Statistics = ({ title, stats }) => {
-  const titleElement = title && <h2 className={styles.title}>Upload stats</h2>;
-
-  const elements = stats.map(stat => (
-    <li
-      key={stat.id}
-      className={styles.item}
-      style={{
-        backgroundColor: getRandomHexColor(),
-        color: getRandomHexColor(),
-      }}
-    >
-      <span className={styles.label}>{stat.label}</span>
-      <span className={styles.percentage}>{stat.percentage}</span>
-    </li>
-  ));
-
   return (
     <section className={styles.statistics}>
-      {titleElement}
-      <ul className={styles.statlist}>{elements}</ul>
+      {title && <h2 className={styles.title}>{title}</h2>}
+
+      <ul className={styles.statlist}>
+        {stats.map(stat => (
+          <li
+            key={stat.id}
+            className={styles.item}
+            style={{
+              backgroundColor: getRandomHexColor(),
+              color: getRandomHexColor(),
+            }}
+          >
+            <span className={styles.label}>{stat.label}</span>
+            <span className={styles.percentage}>{stat.percentage}</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
 
-Statistics.defaultProps = { title: 'Upload stats' };
+Statistics.defaultProps = {
+  items: [],
+};
 
 Statistics.propType = {
   title: PropTypes.string,
